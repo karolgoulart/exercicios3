@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int eh_primo (int n){
+    int i;
+
+    for(i=2; i<n; i++){
+        if (n%i==0){
+            return 0;
+        }
+        else{
+            return 1;
+        }
+    }
+
+}
+
+int main (){
+    int a;
+
+    printf("Insira um número:\n");
+    scanf ("%d", &a);
+    if(eh_primo(a)){
+        printf("O número %d é primo\n", a);
+    }
+    else{
+        printf("o número %d não é primo\n", a);
+    }
+    return 0;
+}
